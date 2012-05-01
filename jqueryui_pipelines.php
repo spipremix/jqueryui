@@ -22,15 +22,12 @@ function jqueryui_jquery_plugins($plugins){
 }
 
 /**
- * Ajout des css de jQuery UI pour les pages publiques et privées
+ * Ajout des css de jQuery UI pour les pages publiques
  * 
  * @param: $flux 
  * @return: $flux
  */
 function jqueryui_insert_head_css($flux) {
-	
-	// éléments par défaut pour l'espace privé
-	$base = test_espace_prive() ? array('jquery.ui.datepicker') : array();
 	
 	// gestion des dépendances suivant les modules demandés par le pipeline jqueryui_plugins
 	$jqueryui_plugins = sinon(jqueryui_dependances(sinon(pipeline('jqueryui_plugins'),$base)),array());
@@ -62,6 +59,19 @@ function jqueryui_insert_head_css($flux) {
 		}
 	}
 
+	return $flux;
+}
+
+/**
+ * Ajout de la css de jQuery UI pour les pages privées
+ * 
+ * @param: $flux 
+ * @return: $flux
+ */
+function jqueryui_header_prive_css($flux) {
+	
+	$flux .= "<link rel='stylesheet' type='text/css' media='all' href='".find_in_path('css/jquery-ui.css')."' />\n";
+	
 	return $flux;
 }
 
