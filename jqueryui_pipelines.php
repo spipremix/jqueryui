@@ -15,7 +15,7 @@ function jqueryui_jquery_plugins($plugins){
 	
 	// insérer les scripts nécessaires
 	foreach ($jqueryui_plugins as $val) {
-		$plugins[] = "javascript/".$val.".js";
+		$plugins[] = "javascript/ui/".$val.".js";
 	}
 	
 	return $plugins;
