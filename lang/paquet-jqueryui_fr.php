@@ -11,7 +11,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	-* {{Les interactions}}. Elles permettent de donner des propriétés très intéressantes à des éléments HTML, comme le fait de pouvoir être attrapé et déplacé avec la souris (drag & drop), d\'être redimensionné comme une fenêtre, ou encore d\'être sélectionné comme des icônes sur le bureau de votre OS.
 	-* {{Les Widgets}}. Ce sont des objets &#171; clé en main &#187; qui proposent des fonctionnalités de haut niveau comme le DatePicker par exemple, qui affiche un calendrier permettant de sélectionner une date.
     -* {{Les effects}}. Ils enrichissement les effets par défaut proposés par jQuery (fadeIn, slideUp...). Grâce à jQuery UI, il est par exemple possible d\'animer la propriété CSS background-color avec .animate() ou encore d\'ajouter des transitions lors des addClass/removeClass...',
-	'jquery_slogan' => 'Animations, effets et widgets jQuery'
+	'jqueryui_slogan' => 'Animations, effets et widgets jQuery'
 );
 
 ?>

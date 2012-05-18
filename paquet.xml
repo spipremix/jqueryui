@@ -8,6 +8,7 @@
 >
 
 	<nom>jQuery UI</nom>
+	<!-- Animations, effets et widgets jQuery -->
 
 	<auteur>Collectif SPIP</auteur>
 	<credit lien="http://jqueryui.com/about">jQuery UI Team</credit>
