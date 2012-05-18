@@ -9,7 +9,8 @@
 
 	<nom>jQuery UI</nom>
 
-	<auteur>jQuery Team</auteur>
+	<auteur>Collectif SPIP</auteur>
+	<credit lien="http://jqueryui.com/about">jQuery UI Team</credit>
 
 	<pipeline nom="jqueryui_plugins" action="" />
 
