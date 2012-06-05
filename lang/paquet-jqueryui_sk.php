@@ -11,9 +11,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'jqueryui_description' => 'Tento zásuvný modul do SPIPu zavádza doplnkovú knižnicu  jQuery UI umožňujúcu vytváranie dynamických grafických prvkov: tabulátory, drag & drop, grafy zobrazujúce postup pri dokončení niečoho atď.
 	Funkcie tejto knižnice sa rozdeľujú do 3 kategórií:
 
-	-* {{Les interactions}}. Elles permettent de donner des propriétés très intéressantes à des éléments HTML, comme le fait de pouvoir être attrapé et déplacé avec la souris (drag & drop), d\'être redimensionné comme une fenêtre, ou encore d\'être sélectionné comme des icônes sur le bureau de votre OS.
-	-* {{Les Widgets}}. Ce sont des objets « clé en main » qui proposent des fonctionnalités de haut niveau comme le DatePicker par exemple, qui affiche un calendrier permettant de sélectionner une date.
-    -* {{Les effects}}. Ils enrichissement les effets par défaut proposés par jQuery (fadeIn, slideUp...). Grâce à jQuery UI, il est par exemple possible d\'animer la propriété CSS background-color avec .animate() ou encore d\'ajouter des transitions lors des addClass/removeClass...', # MODIF
+	-* {{Interakcie:}} dávajú vašim HTML objektom zaujímavé vlastnosti, napríklad môžete na objekty kliknúť myšou, a tak ich presúvať (drag&drop), dá sa meniť ich veľkosť tak ako veľkosť okna, alebo si ich môžete zvoliť ako ikony na pracovnú plochu svojho operačného systému.
+	-* {{Widgety:}} to sú objekty s "prepínačmi", ktoré ponúkajú funkcie vysokej úrovne, ako napríklad DatePicker, ktorý zobrazí kalendár umožňujúci zadanie dátumu.
+    -* {{Efekty:}} obohacujú predvolené efekty, ktoré ponúka jQuery (fadeIn, slideUp...). Napríklad vďaka jQuery UI je možné doplniť vlastnosť CSS background-color o .animate() alebo pridať prechody k addClass/removeClass, atď.',
 	'jqueryui_slogan' => 'Animácie, efekty a widgety jQuery'
 );
 
