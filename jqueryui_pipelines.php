@@ -28,10 +28,12 @@ function jqueryui_jquery_plugins($plugins){
  * @return: $flux
  */
 function jqueryui_insert_head_css($flux) {
-	
-	// gestion des dépendances suivant les modules demandés par le pipeline jqueryui_plugins
-	$jqueryui_plugins = sinon(jqueryui_dependances(sinon(pipeline('jqueryui_plugins'),array())),array());
-	
+
+	// Modules demandés par le pipeline jqueryui_plugins
+	$jqueryui_plugins = is_array($jqueryui_plugins = pipeline('jqueryui_plugins')) ? $jqueryui_plugins : array();
+	// gestion des dépendances des modules demandés
+	$jqueryui_plugins = is_array($jqueryui_plugins = jqueryui_dependances($jqueryui_plugins)) ? $jqueryui_plugins : array();
+
 	// ajouter le thème si nécessaire
 	if ($jqueryui_plugins AND !in_array('jquery.ui.theme', $jqueryui_plugins))
 		$jqueryui_plugins[] = 'jquery.ui.theme';
