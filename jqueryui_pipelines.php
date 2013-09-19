@@ -12,6 +12,12 @@ function jqueryui_jquery_plugins($plugins){
 
 	// Modules demandés par le pipeline jqueryui_plugins
 	is_array($jqueryui_plugins = pipeline('jqueryui_plugins', array())) || $jqueryui_plugins = array();
+	
+	// Gestion des renommages de plugins jqueryui
+	foreach ($jqueryui_plugins as $nb => $val) {
+		if(preg_match('/jquery\.effects\..*/',$val))
+			$jqueryui_plugins[$nb] = str_replace('jquery.effects.','jquery.ui.effect-',$val);
+	}
 	// gestion des dépendances des modules demandés
 	is_array($jqueryui_plugins = jqueryui_dependances($jqueryui_plugins)) || $jqueryui_plugins = array();
 
@@ -54,11 +60,14 @@ function jqueryui_insert_head_css($flux) {
 						'jquery.ui.core',
 						'jquery.ui.datepicker',
 						'jquery.ui.dialog',
+						'jquery.ui.menus',
 						'jquery.ui.progressbar',
 						'jquery.ui.resizable',
 						'jquery.ui.selectable',
 						'jquery.ui.slider',
+						'jquery.ui.spinner',
 						'jquery.ui.tabs',
+						'jquery.ui.tooltip',
 						'jquery.ui.theme'
 						);
 
@@ -100,53 +109,71 @@ function jqueryui_dependances($plugins){
 							'jquery.ui.mouse',
 							'jquery.ui.widget',
 							'jquery.ui.datepicker'
-	);
+						);
 
 	/**
 	 * Dépendances à widget
 	 * Si un autre plugin est dépendant d'un de ceux là, on ne les ajoute pas
 	 */
 	$dependance_widget = array(
-							'jquery.ui.mouse',
 							'jquery.ui.accordion',
 							'jquery.ui.autocomplete',
 							'jquery.ui.button',
 							'jquery.ui.dialog',
+							'jquery.ui.mouse',
+							'jquery.ui.menu',
+							'jquery.ui.progressbar',
 							'jquery.ui.tabs',
-							'jquery.ui.progressbar'
-							);
+							'jquery.ui.tooltip'
+						);
 
 	$dependance_mouse = array(
 							'jquery.ui.draggable',
 							'jquery.ui.droppable',
 							'jquery.ui.resizable',
 							'jquery.ui.selectable',
-							'jquery.ui.sortable',
-							'jquery.ui.slider'
+							'jquery.ui.slider',
+							'jquery.ui.sortable'
 						);
 
 	$dependance_position = array(
 							'jquery.ui.autocomplete',
 							'jquery.ui.dialog',
-							);
+							'jquery.ui.menu',
+							'jquery.ui.tooltip'
+						);
+
+	$dependance_button = array(
+							'jquery.ui.dialog',
+							'jquery.ui.spinner'
+						);
+
+	$dependance_menu = array(
+							'jquery.ui.autocomplete'
+						);
 
 	$dependance_draggable = array(
 							'jquery.ui.droppable'
-							);
+						);
+	
+	$dependance_resizable = array(
+							'jquery.ui.dialog'
+						);
 
 	$dependance_effects = array(
-							'jquery.effects.blind',
-							'jquery.effects.bounce',
-							'jquery.effects.clip',
-							'jquery.effects.drop',
-							'jquery.effects.explode',
-							'jquery.effects.fold',
-							'jquery.effects.highlight',
-							'jquery.effects.pulsate',
-							'jquery.effects.scale',
-							'jquery.effects.shake',
-							'jquery.effects.slide',
-							'jquery.effects.transfer'
+							'jquery.ui.effect-blind',
+							'jquery.ui.effect-bounce',
+							'jquery.ui.effect-clip',
+							'jquery.ui.effect-drop',
+							'jquery.ui.effect-explode',
+							'jquery.ui.effect-fade',
+							'jquery.ui.effect-fold',
+							'jquery.ui.effect-highlight',
+							'jquery.ui.effect-pulsate',
+							'jquery.ui.effect-scale',
+							'jquery.ui.effect-shake',
+							'jquery.ui.effect-slide',
+							'jquery.ui.effect-transfer'
 						);
 
 	/**
@@ -155,6 +182,8 @@ function jqueryui_dependances($plugins){
 	 * Pour éviter le cas où un pipeline demanderait un plugin dans le mauvais sens de la dépendance par exemple
 	 *
 	 * On commence par le bas de l'échelle :
+	 * - button
+	 * - menu
 	 * - draggable
 	 * - position
 	 * - mouse
@@ -162,6 +191,18 @@ function jqueryui_dependances($plugins){
 	 * - core
 	 * - effects
 	 */
+	if(count($intersect = array_intersect($plugins,$dependance_resizable)) > 0){
+		$keys = array_keys($intersect);
+		array_splice($plugins,$keys[0], 0, "jquery.ui.resizable");
+	}
+	if(count($intersect = array_intersect($plugins,$dependance_button)) > 0){
+		$keys = array_keys($intersect);
+		array_splice($plugins,$keys[0], 0, "jquery.ui.button");
+	}
+	if(count($intersect = array_intersect($plugins,$dependance_menu)) > 0){
+		$keys = array_keys($intersect);
+		array_splice($plugins,$keys[0], 0, "jquery.ui.menu");
+	}
 	if(count($intersect = array_intersect($plugins,$dependance_draggable)) > 0){
 		$keys = array_keys($intersect);
 		array_splice($plugins,$keys[0], 0, "jquery.ui.draggable");
@@ -184,7 +225,7 @@ function jqueryui_dependances($plugins){
 	}
 	if(count($intersect = array_intersect($plugins,$dependance_effects)) > 0){
 		$keys = array_keys($intersect);
-		array_splice($plugins,$keys[0], 0, "jquery.effects.core");
+		array_splice($plugins,$keys[0], 0, "jquery.ui.effect");
 	}
 	$plugins = array_unique($plugins);
 
