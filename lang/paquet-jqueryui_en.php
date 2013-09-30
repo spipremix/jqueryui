@@ -9,7 +9,6 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// J
 	'jqueryui_description' => 'This plugin implements the jQuery UI library in SPIP allowing the creation of dynamic graphical components: tabs, drag & drop, progress bars...
-
 The features of this library are divided into three categories:
 -* {{The interactions}}. They can provide very interesting properties to HTML elements, such as being able to be grabbed and moved with the mouse (drag & drop), to be resized as a window, or to be selected as icons on the desktop of your OS.
 -* {{The Widgets}}. They are "turnkey" objects offering high-level features such as DatePicker for example, which displays a calendar to select a date.
