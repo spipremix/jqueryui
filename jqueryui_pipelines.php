@@ -100,6 +100,19 @@ function jqueryui_header_prive_css($flux) {
 }
 
 /**
+ * Ajout du script effect de jQuery UI pour les pages privées
+ * 
+ * @param: $flux 
+ * @return: $flux
+ */
+function jqueryui_header_prive($flux) {
+	
+	$flux .="\n".'<script src="'.find_in_path('prive/javascript/ui/effect.js').'" type="text/javascript"></script>';
+	
+	return $flux;
+}
+
+/**
  * Gérer les dépendances de la lib jQuery UI
  *
  * @param array $plugins tableau des plugins demandés

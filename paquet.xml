@@ -17,6 +17,7 @@
 
 	<pipeline nom="jquery_plugins" inclure="jqueryui_pipelines.php" />
 	<pipeline nom="insert_head_css" inclure="jqueryui_pipelines.php" />
+	<pipeline nom="header_prive" inclure="jqueryui_pipelines.php" />
 	<pipeline nom="header_prive_css" inclure="jqueryui_pipelines.php" />
 
 	<chemin path="prive" />
