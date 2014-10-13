@@ -5,20 +5,22 @@ if (!defined('_ECRIRE_INC_VERSION')) return;
 /**
  * Ajout des scripts de jQuery UI pour les pages publiques et privées
  * 
- * @param: $plugins 
- * @return: $plugins
+ * @param array $plugins 
+ * @return array $plugins
  */
 function jqueryui_jquery_plugins($plugins){
 
 	// Modules demandés par le pipeline jqueryui_plugins
 	is_array($jqueryui_plugins = pipeline('jqueryui_plugins', array())) || $jqueryui_plugins = array();
-	
+
 	// Gestion des renommages de plugins jqueryui
 	foreach ($jqueryui_plugins as $nb => $val) {
-		if(preg_match('/jquery\.effects\..*/',$val))
+		if (0 === strpos('jquery.effects.', $val)) {
 			$jqueryui_plugins[$nb] = str_replace('jquery.effects.','jquery.ui.effect-',$val);
-		if(preg_match('/jquery\.ui\..*/',$val))
+		}
+		if (0 === strpos('jquery.ui.', $val)) {
 			$jqueryui_plugins[$nb] = str_replace('jquery.ui.','',$val);
+		}
 	}
 	// gestion des dépendances des modules demandés
 	is_array($jqueryui_plugins = jqueryui_dependances($jqueryui_plugins)) || $jqueryui_plugins = array();
@@ -79,7 +81,7 @@ function jqueryui_insert_head_css($flux) {
 	// insérer les css nécessaires
 	foreach ($jqueryui_plugins as $plugin) {
 		if (in_array($plugin, $styles)) {
-			$flux .= "<link rel='stylesheet' type='text/css' media='all' href='".find_in_path('css/'.$plugin.'.css')."' />\n";
+			$flux .= "<link rel='stylesheet' type='text/css' media='all' href='".find_in_path('css/ui/'.$plugin.'.css')."' />\n";
 		}
 	}
 
@@ -94,7 +96,7 @@ function jqueryui_insert_head_css($flux) {
  */
 function jqueryui_header_prive_css($flux) {
 	
-	$flux .= "<link rel='stylesheet' type='text/css' media='all' href='".find_in_path('css/jquery-ui.css')."' />\n";
+	$flux .= "<link rel='stylesheet' type='text/css' media='all' href='".find_in_path('css/ui/jquery-ui.css')."' />\n";
 	
 	return $flux;
 }
