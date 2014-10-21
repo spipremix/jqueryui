@@ -15,10 +15,10 @@ function jqueryui_jquery_plugins($plugins){
 
 	// Gestion des renommages de plugins jqueryui
 	foreach ($jqueryui_plugins as $nb => $val) {
-		if (0 === strpos('jquery.effects.', $val)) {
+		if (0 === strpos($val,'jquery.effects.')) {
 			$jqueryui_plugins[$nb] = str_replace('jquery.effects.','jquery.ui.effect-',$val);
 		}
-		if (0 === strpos('jquery.ui.', $val)) {
+		if (0 === strpos($val,'jquery.ui.')) {
 			$jqueryui_plugins[$nb] = str_replace('jquery.ui.','',$val);
 		}
 	}
