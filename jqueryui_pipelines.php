@@ -54,7 +54,7 @@ function jqueryui_insert_head_css($flux) {
 
 	// ajouter le thème si nécessaire
 	if ($jqueryui_plugins AND !in_array('jquery.ui.theme', $jqueryui_plugins))
-		$jqueryui_plugins[] = 'jquery.ui.theme';
+		$jqueryui_plugins[] = 'theme';
 
 	// les css correspondantes aux plugins
 	$styles = array(
@@ -77,9 +77,15 @@ function jqueryui_insert_head_css($flux) {
 						'tooltip',
 						'theme'
 						);
-
+	
 	// insérer les css nécessaires
 	foreach ($jqueryui_plugins as $plugin) {
+		if (0 === strpos($plugin,'jquery.effects.')) {
+			$plugin = str_replace('jquery.effects.','jquery.ui.effect-',$plugin);
+		}
+		if (0 === strpos($plugin,'jquery.ui.')) {
+			$plugin = str_replace('jquery.ui.','',$plugin);
+		}
 		if (in_array($plugin, $styles)) {
 			$flux .= "<link rel='stylesheet' type='text/css' media='all' href='".find_in_path('css/ui/'.$plugin.'.css')."' />\n";
 		}
