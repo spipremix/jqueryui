@@ -13,15 +13,6 @@ function jqueryui_jquery_plugins($plugins){
 	// Modules demandés par le pipeline jqueryui_plugins
 	is_array($jqueryui_plugins = pipeline('jqueryui_plugins', array())) || $jqueryui_plugins = array();
 
-	// Gestion des renommages de plugins jqueryui
-	foreach ($jqueryui_plugins as $nb => $val) {
-		if (0 === strpos($val,'jquery.effects.')) {
-			$jqueryui_plugins[$nb] = str_replace('jquery.effects.','jquery.ui.effect-',$val);
-		}
-		if (0 === strpos($val,'jquery.ui.')) {
-			$jqueryui_plugins[$nb] = str_replace('jquery.ui.','',$val);
-		}
-	}
 	// gestion des dépendances des modules demandés
 	is_array($jqueryui_plugins = jqueryui_dependances($jqueryui_plugins)) || $jqueryui_plugins = array();
 
@@ -127,6 +118,16 @@ function jqueryui_header_prive($flux) {
  * @return array $plugins tableau des plugins nécessaires ou false
  */
 function jqueryui_dependances($plugins){
+
+	// Gestion des renommages de plugins jqueryui
+	foreach ($plugins as $nb => $val) {
+		if (0 === strpos($val,'jquery.effects.')) {
+			$plugins[$nb] = str_replace('jquery.effects.','jquery.ui.effect-',$val);
+		}
+		if (0 === strpos($val,'jquery.ui.')) {
+			$plugins[$nb] = str_replace('jquery.ui.','',$val);
+		}
+	}
 
 	/**
 	 * Gestion des dépendances inter plugins
