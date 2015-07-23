@@ -12,7 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 As funcionalidades desta biblioteca estão organizadas em três categorias:
 -* {{As interações}}. Podem fornecer propriedades muito interessantes a elementos HTML, como a possibilidade de agarrar e deslocar elementos com o mouse (drag & drop), redimensioná-los como se fossem janelas ou de os selecionar como ícones do seu sistema operacional.
 -* {{Os Widgets}}. São objetos prontos, que oferecem funcionalidades sofisticadas como, por exemplo, o DatePicker, que exibe um calendário para seleção de uma data.
--* {{Os efeitos}}. Enriquecem os efeitos padrão oferecidos pelo JQuery (fadeIn, slideUp...). Graças ao JQuery UI é, por exemplo, possível animar a propriedade CSS background-color com .animate() ou ainda adicionar transições às ações addClass/removeClass...',
+-* {{Os efeitos}}. Enriquecem os efeitos padrão oferecidos pelo JQuery (fadeIn, slideUp...). Graças ao JQuery UI é, por exemplo, possível animar a propriedade CSS background-color com .animate() ou ainda adicionar transições às ações addClass/removeClass...', # MODIF
 	'jqueryui_slogan' => 'Animações, efeitos e widgets jQuery'
 );
 

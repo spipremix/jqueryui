@@ -12,7 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 Die Bibliothek enthält drei Kategorien von Funktionen:
 -* {{Interaktionen}} ermöglichen HTML-Elementen mit zusätzlichen Eigenschaften auszustatten, etwa dem Verschieben mit der Maus, der Größenänderung von Fenstern oder einer Auswahl wie bei Desktop-Icons.
 -* {{Widgets}} sind gebrauchsfertige komplexe Objekte wie z.B. der DatePicker, welcher einen Kalender zur Datumsauswahl einblendet.
--* {{Effekte}} erweitern die Standardeffekte (fadeIn, slideUp...) von jQuery. Mit jQuery UI kann z.B. die Eigenschaft CSS background-color mit .animate() dynamisiert werden, oder Übergänge bei addClass/removeClass eingefügt werden.',
+-* {{Effekte}} erweitern die Standardeffekte (fadeIn, slideUp...) von jQuery. Mit jQuery UI kann z.B. die Eigenschaft CSS background-color mit .animate() dynamisiert werden, oder Übergänge bei addClass/removeClass eingefügt werden.', # MODIF
 	'jqueryui_slogan' => 'Animationen, Effekte und Widgets für jQuery'
 );
 

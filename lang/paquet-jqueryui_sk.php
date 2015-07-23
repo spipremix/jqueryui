@@ -12,7 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 Funkcie tejto knižnice sa rozdeľujú do 3 kategórií:
 -* {{Interakcie:}} dávajú vašim HTML objektom zaujímavé vlastnosti, napríklad môžete na objekty kliknúť myšou, a tak ich presúvať (drag&drop), dá sa meniť ich veľkosť tak ako veľkosť okna, alebo si ich môžete zvoliť ako ikony na pracovnú plochu svojho operačného systému.
 -* {{Widgety:}} to sú objekty s "prepínačmi", ktoré ponúkajú funkcie vysokej úrovne, ako napríklad DatePicker, ktorý zobrazí kalendár umožňujúci zadanie dátumu.
--* {{Efekty:}} obohacujú predvolené efekty, ktoré ponúka jQuery (fadeIn, slideUp...). Napríklad vďaka jQuery UI je možné doplniť vlastnosť CSS background-color o .animate() alebo pridať prechody k addClass/removeClass, atď.',
+-* {{Efekty:}} obohacujú predvolené efekty, ktoré ponúka jQuery (fadeIn, slideUp...). Napríklad vďaka jQuery UI je možné doplniť vlastnosť CSS background-color o .animate() alebo pridať prechody k addClass/removeClass, atď.', # MODIF
 	'jqueryui_slogan' => 'Animácie, efekty a widgety jQuery'
 );
 
