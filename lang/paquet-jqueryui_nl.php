@@ -12,7 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 Kenmerken van dit bibliotheek bestaan uit drie categorieën:
 -* {{Interacties}}. Zij kunnen zeer interessante eigenschappen aan HTML-elementen geven, zoals de mogelijkheid om ze te kunnen grijpen en verplaatsen met de muis (drag & drop), aanpassen als een venster, of nog geselecteerd te worden als pictogrammen op het bureau van uw OS.
 -* {{Widgets}}. Het zijn objecten "klaar om te gebruiken" die hoog niveau functionaliteit aanbieden, zoals bijvoorbeeld  datepicker die een kalender aanmaakt om het selecteren van een datum te toelaten.
--* {{De effecten}}. Ze verrijken  de effecten aangeboden door jQuery (FadeIn, slideUp ...). Dankzij jQuery UI is het bijvoorbeeld mogelijk om de CSS background-color met .animate() te animeren of nog overgangen tijdens addClass / removeClass toe te voegen ...',
+-* {{De effecten}}. Ze verrijken  de effecten aangeboden door jQuery (FadeIn, slideUp ...). Dankzij jQuery UI is het bijvoorbeeld mogelijk om de CSS background-color met .animate() te animeren of nog overgangen tijdens addClass / removeClass toe te voegen ...', # MODIF
 	'jqueryui_slogan' => 'jQuery Animatie, effecten en widgets '
 );
 

@@ -14,7 +14,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 -* {{Виджеты (Les Widgets)}}. Они являются объектами "под ключ", предлагающими возможности высокого уровня, как например DatePicker, который показывает календарь для выбора даты.
 -* {{Эффекты (Les effects)}}. Они обогащают типичные эффекты, предлагаемые jQuery (fadeIn, slideUp...). С JQuery UI, например, можно анимировать CSS фон - свойство background-color с .animate() или добавить переходы с addClass/removeClass...
 
-	',
+	', # MODIF
 	'jqueryui_slogan' => 'Анимация, эффекты и плагины jQuery'
 );
 
