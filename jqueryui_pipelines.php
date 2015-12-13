@@ -47,7 +47,7 @@ function jqueryui_insert_head_css($flux) {
 	is_array($jqueryui_plugins = jqueryui_dependances($jqueryui_plugins)) || $jqueryui_plugins = array();
 
 	// ajouter le thème si nécessaire
-	if ($jqueryui_plugins AND !in_array('jquery.ui.theme', $jqueryui_plugins)) {
+	if ($jqueryui_plugins and !in_array('jquery.ui.theme', $jqueryui_plugins)) {
 		$jqueryui_plugins[] = 'theme';
 	}
 
@@ -262,5 +262,3 @@ function jqueryui_dependances($plugins) {
 
 	return $plugins;
 }
-
-?>
