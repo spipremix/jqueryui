@@ -18,4 +18,3 @@ Funkcie tejto knižnice sa rozdeľujú do 3 kategórií:
 	'jqueryui_slogan' => 'Animácie, efekty a widgety jQuery'
 );
 
-?>

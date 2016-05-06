@@ -18,4 +18,3 @@ D’Funktioune vun dëser Library ginn a 3 Kategorien opgedeelt:
 	'jqueryui_slogan' => 'jQuery Animatiounen, Effekter a Widgets'
 );
 
-?>

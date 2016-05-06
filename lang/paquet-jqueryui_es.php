@@ -18,4 +18,3 @@ Las funciones de esta librería se dividen en tres categorías:
 	'jqueryui_slogan' => 'Animaciones, efectos y widgets jQuery'
 );
 
-?>

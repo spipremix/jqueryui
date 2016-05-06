@@ -18,4 +18,3 @@ The features of this library are divided into three categories:
 	'jqueryui_slogan' => 'Animations, effects and jQuery widgets'
 );
 
-?>

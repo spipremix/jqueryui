@@ -19,4 +19,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'jqueryui_slogan' => 'إنتاج الحركة والمؤثرات وتوسيع أدواة jQuery'
 );
 
-?>

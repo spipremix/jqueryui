@@ -18,4 +18,3 @@ Li founciounalità d’aquela biblioutèca si divison en 3 categourìa :
 	'jqueryui_slogan' => 'Animacioun, efet e widget jQuery'
 );
 
-?>

@@ -18,4 +18,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'jqueryui_slogan' => 'Анімація, ефекти і плагіни jQuery'
 );
 
-?>

@@ -18,4 +18,3 @@ Kenmerken van deze bibliotheek bestaan uit drie categorieën:
 	'jqueryui_slogan' => 'jQuery animatie, effecten en widgets '
 );
 
-?>
