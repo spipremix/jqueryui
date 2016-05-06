@@ -17,4 +17,3 @@ Las funciones de esta librería se dividen en tres categorías:
 -* {{Los efectos}}. Enriquecen los efectos por omisión propuestos por jQuery (fadeIn, slideUp...). Gracias a jQuery UI es posible, por ejemplo, animar la propiedad CSS background-color con .animate() o incluso agregar transiciones a los addClass/removeClass...',
 	'jqueryui_slogan' => 'Animaciones, efectos y widgets jQuery'
 );
-

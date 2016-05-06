@@ -17,4 +17,3 @@ As funcionalidades desta biblioteca se dividem em três categorias:
 -* {{Os efeitos}}. Enriquecem os efeitos padrão oferecidos pelo JQuery (fadeIn, slideUp...). Graças ao JQuery UI é possível, por exemplo, animar a propriedade CSS background-color com .animate() ou ainda adicionar transições às ações addClass/removeClass...',
 	'jqueryui_slogan' => 'Animações, efeitos e widgets jQuery'
 );
-

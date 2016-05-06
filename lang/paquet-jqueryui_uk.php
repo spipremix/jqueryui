@@ -17,4 +17,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 -* {{Ефекти}}. Збагачують типові ефекти, що пропонує jQuery (fadeIn, slideUp...). З JQuery UI, наприклад, можна анімувати CSS фон за допомогою властивості background-color з .animate() або додати переходи з addClass/removeClass...',
 	'jqueryui_slogan' => 'Анімація, ефекти і плагіни jQuery'
 );
-

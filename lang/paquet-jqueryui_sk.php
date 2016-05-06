@@ -17,4 +17,3 @@ Funkcie tejto knižnice sa rozdeľujú do 3 kategórií:
 -* {{Efekty:}} obohacujú predvolené efekty, ktoré ponúka jQuery (fadeIn, slideUp...). Napríklad vďaka jQuery UI je možné doplniť vlastnosť CSS background-color o .animate() alebo pridať prechody k addClass/removeClass, atď.', # MODIF
 	'jqueryui_slogan' => 'Animácie, efekty a widgety jQuery'
 );
-

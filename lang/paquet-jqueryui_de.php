@@ -17,4 +17,3 @@ Die Bibliothek enthält drei Kategorien von Funktionen:
 -* {{Effekte}} erweitern die Standardeffekte (fadeIn, slideUp...) von jQuery. Mit jQuery UI kann z.B. die Eigenschaft CSS background-color mit .animate() dynamisiert werden, oder Übergänge bei addClass/removeClass eingefügt werden.',
 	'jqueryui_slogan' => 'Animationen, Effekte und Widgets für jQuery'
 );
-

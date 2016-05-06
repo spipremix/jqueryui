@@ -17,4 +17,3 @@ Kenmerken van deze bibliotheek bestaan uit drie categorieën:
 -* {{De effecten}}. Deze verrijken  de effecten aangeboden door jQuery (FadeIn, slideUp ...). Dankzij jQuery UI is het bijvoorbeeld mogelijk om de CSS background-color met .animate() te animeren of overgangen bij addClass / removeClass toe te voegen ...',
 	'jqueryui_slogan' => 'jQuery animatie, effecten en widgets '
 );
-

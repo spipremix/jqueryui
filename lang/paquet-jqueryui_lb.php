@@ -17,4 +17,3 @@ D’Funktioune vun dëser Library ginn a 3 Kategorien opgedeelt:
 -* {{Effekter}}. Si beräicheren d’Default-Effekter vun jQuery (fadeIn, slideUp, asw.). Mat jQuery UI ass et z.B. méiglech d’CSS-Proprietéit background-color mat .animate() ze änneren oder Transitiounen mat  addClass/removeClass ze erméiglechen.', # MODIF
 	'jqueryui_slogan' => 'jQuery Animatiounen, Effekter a Widgets'
 );
-

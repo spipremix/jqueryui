@@ -17,4 +17,3 @@ Li founciounalità d’aquela biblioutèca si divison en 3 categourìa :
 -* {{Lu efet}}. Enriquisson lu efet predefinit proupausat da jQuery (fadeIn, slideUp...). Gauch a jQuery UI, es per isemple poussible d’animà la prouprietà CSS background-color embé .animate() o ben d’ajustà de transicioun dóu temp dei addClass/removeClass...',
 	'jqueryui_slogan' => 'Animacioun, efet e widget jQuery'
 );
-
