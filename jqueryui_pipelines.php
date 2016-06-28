@@ -120,7 +120,7 @@ function jqueryui_dependances($plugins) {
 	// Gestion des renommages de plugins jqueryui
 	foreach ($plugins as $nb => $val) {
 		if (0 === strpos($val, 'jquery.effects.')) {
-			$plugins[$nb] = str_replace('jquery.effects.', 'jquery.ui.effect-', $val);
+			$plugins[$nb] = str_replace('jquery.effects.', 'effect-', $val);
 		}
 		if (0 === strpos($val, 'jquery.ui.')) {
 			$plugins[$nb] = str_replace('jquery.ui.', '', $val);
