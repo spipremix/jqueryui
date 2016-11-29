@@ -20,7 +20,7 @@ function jqueryui_jquery_plugins($plugins) {
 
 	// insérer les scripts nécessaires
 	foreach ($jqueryui_plugins as $val) {
-		$plugins[] = "javascript/ui/" . $val . ".js";
+		$plugins[] = 'javascript/ui/' . $val . '.js';
 	}
 
 	return $plugins;
@@ -224,39 +224,39 @@ function jqueryui_dependances($plugins) {
 	 */
 	if (count($intersect = array_intersect($plugins, $dependance_resizable)) > 0) {
 		$keys = array_keys($intersect);
-		array_splice($plugins, $keys[0], 0, "resizable");
+		array_splice($plugins, $keys[0], 0, 'resizable');
 	}
 	if (count($intersect = array_intersect($plugins, $dependance_button)) > 0) {
 		$keys = array_keys($intersect);
-		array_splice($plugins, $keys[0], 0, "button");
+		array_splice($plugins, $keys[0], 0, 'button');
 	}
 	if (count($intersect = array_intersect($plugins, $dependance_menu)) > 0) {
 		$keys = array_keys($intersect);
-		array_splice($plugins, $keys[0], 0, "menu");
+		array_splice($plugins, $keys[0], 0, 'menu');
 	}
 	if (count($intersect = array_intersect($plugins, $dependance_draggable)) > 0) {
 		$keys = array_keys($intersect);
-		array_splice($plugins, $keys[0], 0, "draggable");
+		array_splice($plugins, $keys[0], 0, 'draggable');
 	}
 	if (count($intersect = array_intersect($plugins, $dependance_position)) > 0) {
 		$keys = array_keys($intersect);
-		array_splice($plugins, $keys[0], 0, "position");
+		array_splice($plugins, $keys[0], 0, 'position');
 	}
 	if (count($intersect = array_intersect($plugins, $dependance_mouse)) > 0) {
 		$keys = array_keys($intersect);
-		array_splice($plugins, $keys[0], 0, "mouse");
+		array_splice($plugins, $keys[0], 0, 'mouse');
 	}
 	if (count($intersect = array_intersect($plugins, $dependance_widget)) > 0) {
 		$keys = array_keys($intersect);
-		array_splice($plugins, $keys[0], 0, "widget");
+		array_splice($plugins, $keys[0], 0, 'widget');
 	}
 	if (count($intersect = array_intersect($plugins, $dependance_core)) > 0) {
 		$keys = array_keys($intersect);
-		array_splice($plugins, $keys[0], 0, "core");
+		array_splice($plugins, $keys[0], 0, 'core');
 	}
 	if (count($intersect = array_intersect($plugins, $dependance_effects)) > 0) {
 		$keys = array_keys($intersect);
-		array_splice($plugins, $keys[0], 0, "effect");
+		array_splice($plugins, $keys[0], 0, 'effect');
 	}
 	$plugins = array_unique($plugins);
 
