@@ -20,6 +20,10 @@ function jqueryui_jquery_plugins($plugins) {
 
 	// insérer les scripts nécessaires
 	foreach ($jqueryui_plugins as $val) {
+		// les effets sont dans un sous répertoire effets/
+		if (strpos($val, 'effect-') === 0) {
+			$val = 'effects/' . $val;
+		}
 		$plugins[] = 'javascript/ui/' . $val . '.js';
 	}
 
