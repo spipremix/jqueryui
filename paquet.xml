@@ -1,7 +1,7 @@
 <paquet
 	prefix="jqueryui"
 	categorie="outil"
-	version="1.11.4"
+	version="1.12.1"
 	etat="stable"
 	compatibilite="[3.1.0;3.1.*]"
 	logo="images/jqueryui-128.png"
