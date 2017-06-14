@@ -23,7 +23,8 @@
 		<traducteur nom="b_b" lien="https://trad.spip.net/auteur/b_b" />
 		<traducteur nom="Cerf" lien="https://trad.spip.net/auteur/cerf" />
 	</langue>
-	<langue code="it" url="https://trad.spip.net/tradlang_module/paquet-jqueryui?lang_cible=it" total="2" traduits="1" relire="0" modifs="1" nouveaux="0" pourcent="50.00">
+	<langue code="it" url="https://trad.spip.net/tradlang_module/paquet-jqueryui?lang_cible=it" total="2" traduits="2" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
+		<traducteur nom="Alberto" lien="https://trad.spip.net/auteur/alberto" />
 		<traducteur nom="phante" lien="https://trad.spip.net/auteur/phante" />
 	</langue>
 	<langue code="lb" url="https://trad.spip.net/tradlang_module/paquet-jqueryui?lang_cible=lb" total="2" traduits="1" relire="0" modifs="1" nouveaux="0" pourcent="50.00">
