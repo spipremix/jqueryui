@@ -1,0 +1,11 @@
+{
+    "name": "spip/jqueryui",
+    "type": "spip-plugin",
+    "description": "jQuery UI",
+    "license": "GPL-3.0-or-later",
+    "authors": [{
+        "name": "Collectif SPIP",
+        "email": "spip-dev@rezo.net"
+    }],
+    "require": {}
+}
